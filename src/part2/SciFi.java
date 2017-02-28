@@ -16,4 +16,8 @@ public class SciFi extends Book {
         return "sci-fi";
     }
 
+    @Override
+    public String toString() {
+        return "Title " + title + "; Author: " + author + "Genre: sci-fi";
+    }
 }

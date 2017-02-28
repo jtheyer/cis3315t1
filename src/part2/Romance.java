@@ -11,7 +11,13 @@ public Romance(String title, String author) {
     super(title, author);
 }
 @Override
-public String getGenre(){
-    return "Romance";
-}
+    public String getGenre() {
+        return "Romance";
+    }
+  @Override
+    public String toString() {
+        return "Title " + title + "; Author: " + author + "Genre: romance";
+    }
+
+    
 }

@@ -8,16 +8,16 @@ package part2;
  */
 public abstract class Book {
 
-    private String title;
-    private String author;
-
+    protected String title;
+    protected String author;
+    
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
     
     public abstract String getGenre();
-
+    
     public String getTitle() {
         return title;
     }
@@ -33,7 +33,6 @@ public abstract class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-
     @Override
     public String toString() {
         return "Book{" + "title=" + title + ", author=" + author + '}';
