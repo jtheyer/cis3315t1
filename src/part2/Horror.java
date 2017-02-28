@@ -6,5 +6,13 @@ package part2;
  * @author Your name
  */
 public class Horror extends Book {
+    public Horror(String title, String author){
+        super(title, author);
+    }
 
+    @Override
+    public String getGenre() {
+        return "Horror";
+    }
+    
 }

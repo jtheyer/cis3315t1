@@ -7,15 +7,26 @@ import java.util.Random;
  * values between 0 and 99. Then use a nested loop to print out the array row by
  * row with the numbers in evenly spaced columns.
  *
- * @author Your Name Here
+ * @author Jason Heyer
  */
 public class T1P1 {
 
     public static void main(String[] args) {
         Random gen = new Random();
-        int[][] a = new int[20][20];
+        int[][] matrix = new int[20][20];
 
         // Code to fill array with random ints
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[row].length; column++) {
+                matrix[row][column] = (int)(Math.random()*100);
+            }
+        }
         // Code to print array row by row
+         for(int row=0; row < matrix.length; row++){
+            for(int column=0; column < matrix[row].length; column++){ //note [row].length
+                System.out.print(matrix[row][column]+" ");
+            }
+            System.out.println("");
+        }
     }
 }

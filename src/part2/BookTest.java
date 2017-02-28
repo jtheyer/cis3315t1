@@ -3,7 +3,7 @@ package part2;
 /**
  * Follow the SciFi example to fix Horror and Romance classes.
  *
- * @author Your name here
+ * @author Jason Heyer
  */
 public class BookTest {
     public static void main(String[] args) {
